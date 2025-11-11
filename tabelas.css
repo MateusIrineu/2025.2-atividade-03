@@ -1,0 +1,194 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CSS Custom Properties (Variáveis) */
+:root {
+    --primary-color: #051F34;
+    --secondary-color: #0C3453;
+    --light-bg: #f8f9fa;
+    --text-color: #333;
+    --text-secondary: #555;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+
+/* Header e Navegação */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+    margin-bottom: 20px;   
+}
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 0 10px 0 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.nav-menu li a:hover {
+    background-color: var(--secondary-color)
+}
+
+.container-table {
+    margin: 0 10% 10% ;
+    display: flex;
+}
+
+
+/* Ficha Técnica Table */
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.ficha-table .titulo {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+}
+
+.ficha-table {
+    margin: 20px;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.ficha-table th,
+.ficha-table td {
+    padding: 20px;
+    text-align: center  ;
+    border-bottom: 1px solid #eee;
+}
+
+.ficha-table th {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    width: 70%;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.tabela h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-bottom: 3px solid var(--secondary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-links a:hover {
+    background-color: var(--secondary-color)
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+    }
+    
+    .content-grid,
+    .atuacao-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ficha-table th,
+    .ficha-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .ficha-table th {
+        border-bottom: none;
+        padding-bottom: 10px;
+    }
+}

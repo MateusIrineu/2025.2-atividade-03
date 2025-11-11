@@ -44,8 +44,7 @@ header {
 
 img {
     width: 300px;
-    margin-left: 135px;
-
+    margin-bottom: 20px;   
 }
 
 
@@ -62,10 +61,12 @@ img {
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-right: 0 10px 0 10px;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .nav-menu li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--secondary-color)
 }
 
 /* Hero Section */
@@ -91,14 +92,14 @@ img {
 
 .btn-cta {
     display: inline-block;
-    /* border: 1px solid white; */
     color: var(--light-bg);
     padding: 15px 40px;
     text-decoration: none;
     border-radius: 50px;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: transform 0.3s, box-shadow 0.3s;
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .btn-cta:hover {
@@ -133,7 +134,7 @@ img {
     height: 4px;
     background-color: var(--secondary-color);
     margin: 20px auto 0;
-    border-radius: 2px;
+    border-radius: 2px; 
 }
 
 /* Info Boxes */
@@ -245,7 +246,7 @@ img {
 .ficha-table th,
 .ficha-table td {
     padding: 20px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #eee;
 }
 
@@ -286,13 +287,13 @@ footer p {
     text-decoration: none;
     margin: 0 15px;
     padding: 8px 15px;
-    border: 1px solid white;
+    border-bottom: 3px solid var(--secondary-color);
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .footer-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--secondary-color)
 }
 
 /* Responsividade */
